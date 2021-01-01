@@ -14,3 +14,8 @@ vlanы вручную.
 """
 
 vlans = [10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10]
+vlans_set = set(vlans)
+vlans_norepeat = list(vlans_set)
+vlans_norepeat = [int(i) for i in vlans_norepeat]
+vlans_norepeat.sort()
+print(vlans_norepeat)
